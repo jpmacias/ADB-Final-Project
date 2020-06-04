@@ -1,0 +1,155 @@
+<main role="main" class="container">
+  <div class="starter-template">
+    <h1>Selecciona un query</h1>
+    <p>Se debe de hacer flush para cambiar de valor en busqueda, sino trae valor de redis.</p>
+  </div>
+  <div class="container">
+    <p>
+    <form action="/type" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Type search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/title" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Title search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/director" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Director search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/cast" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Cast search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/country" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Country search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/year" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Release year search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/rating" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Rating search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/duration" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Duration search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/genre" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Genre/Listed in search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/description" method="GET" class="form-inline">
+      <div class="form-group">
+        <input type="text" name="search" placeholder="Description search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/numActor" method="GET" class="form-inline">
+      <div class="form-group">
+        <label>Number of shows of a certain actor</label>
+        <input type="text" name="search" placeholder="Actor search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/liShows" method="GET" class="form-inline">
+      <div class="form-group">
+        <label>Number of shows listed in a certain genre</label>
+        <input type="text" name="search" placeholder="Listed in search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <p>
+    <form action="/releaseYear" method="GET" class="form-inline">
+      <div class="form-group">
+        <label>Number of shows released in a certain year</label>
+        <input type="text" name="search" placeholder="Year search..." class="form-control">
+        <input type="submit" value="Search" class="btn btn-default">
+      </div>
+    </form>
+    </p>
+    <div class="row">
+        <h1 style="text-align: center">Create a New Show</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/add-show" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="type" placeholder="Type">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="title" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="director" placeholder="Director">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="cast" placeholder="Cast">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="country" placeholder="Country">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="year" placeholder="Release year">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="rating" placeholder="Rating">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="duration" placeholder="Duration">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="genre" placeholder="Listed in">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="description" placeholder="Description">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</main>

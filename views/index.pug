@@ -1,0 +1,24 @@
+html
+    head
+        title="Index del proyecto"
+    body
+        h1='Seleccione la query que desee probar'
+        //- form(action="/"+type, method="get")
+        //-     input(type="text" name="type" placeholder="Movie/TV Shows")
+        //-     input(type="submit", value="Query Type")
+        a(href='/'+type, target="_blank", rel="noopener noreferrer") Query #{type}  <br />
+        a(href='/'+title, target="_blank", rel="noopener noreferrer") Query #{title}  <br />
+        a(href='/'+director, target="_blank", rel="noopener noreferrer") Query #{director}  <br />
+        a(href='/'+cast, target="_blank", rel="noopener noreferrer") Query #{cast}  <br />
+        a(href='/'+country, target="_blank", rel="noopener noreferrer") Query #{country}  <br />
+        a(href='/'+release_year, target="_blank", rel="noopener noreferrer") Query #{release_year}  <br />
+        a(href='/'+rating, target="_blank", rel="noopener noreferrer") Query #{rating}  <br />
+        a(href='/'+duration, target="_blank", rel="noopener noreferrer") Query #{duration}  <br />
+        a(href='/'+listed_in, target="_blank", rel="noopener noreferrer") Query #{listed_in}  <br />
+        a(href='/'+description, target="_blank", rel="noopener noreferrer") Query #{description}  <br />
+        a(href='/'+ratedCount, target="_blank", rel="noopener noreferrer") Query #{ratedCount}  <br />
+        a(href='/'+shows, target="_blank", rel="noopener noreferrer") Query #{shows}  <br />
+        a(href='/'+moreThanOne, target="_blank", rel="noopener noreferrer") Query #{moreThanOne}  <br />
+        a(href='/'+releasedYear, target="_blank", rel="noopener noreferrer") Query #{releasedYear}  <br />
+        form(action="/add-movie" method="post")
+            input(type="submit", value="Query addMovie", formtarget="_blank")
